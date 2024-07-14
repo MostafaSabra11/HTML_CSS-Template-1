@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(#111,#222);
+    height: 100%;
+    
+    width: 100%;
+}
+.special-heading{
+    color: #ebeceb;
+    font-size: 100px;
+    margin-top: 200px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+}
+.logo img{
+    width: 120px;
+    margin-left: 20px;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    margin:10px auto auto auto;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+    margin-bottom:20px;
+}
+nav ul li a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: #e80202;
+}
+.container nav::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: red;
+    position: absolute;
+    clip-path: circle(20% at right 70% );
+    z-index:-1;
+    top :0;
+    overflow: hidden;
+}
+.content{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.content .text{
+    color: white;
+    margin-left:50px;
+    width: 40%;
+}
+.text h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.text p{
+    line-height: 25px;
+    font-size: 18px;
+}
+.content .img img{
+    margin-right:100px;
+    margin-top: 50px;
+}
+@media (max-width:716px){
+    .container{
+        width: 350px;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content .img,.content .text{
+        width: 80%;
+    }
+    .content .img img{
+        width: 120px;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul{
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+    .logo{
+        margin-top: -30px;
+    }
+    .text{
+        margin-top: 30px;
+    }
+    .container nav::after{
+        display: none;
+    }
+    .contact .contact-cont {
+        padding: 60px;
+    }
+    .contact .contact-cont a{
+        font-size: 5px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        width:750px;
+    }
+
+}
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+.feat .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+    margin-top: 50px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 100px;
+}
+.feat .container h3 , .feat .container p{
+    color: white;
+    letter-spacing: 2px;
+}
+.feat .container a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+.feat .container a:hover{
+    color: gray;
+}
+.feat .container p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.feat .container img{
+    width: 250px;
+    margin: 0px 0 20px 20px;
+}
+.feat .container .column p span{
+    margin-top: 20px;
+    display: block;
+}
+.feat .container{
+    position: relative;
+}
+.feat .container .heading {
+    position: absolute;
+    left:380px;
+    top: -50px;
+    font-size: 100px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: grey;
+    text-align: center;
+}
+.feat .container .heading2 {
+    position: absolute;
+    left:250px;
+    top: -50px;
+    font-size: 100px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: grey;
+}
+.feat .container .heading3{
+    position: absolute;
+    left:350px;
+    top: -50px;
+    font-size: 100px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: grey;
+    text-align: center;
+}
+.contact .container{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact .contact-cont{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact .contact-cont p{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+.contact .contact-cont .social p{
+    font-size: 18px;
+}
+.contact .contact-cont a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    font-weight: 800;
+}
+.contact .contact-cont .social a{
+    display:inline-block;
+    margin-top: 30px;
+    letter-spacing: 10px;
+}
+.footer{
+    width: 100%;
+    background-color: grey;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+}
